@@ -1,0 +1,35 @@
+.hero__img {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+.hero__details {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.hero__title {
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+.hero__title:after {
+	content: "";
+	width: 25%;
+	display: block;
+	height: 2px;
+	background-color: #f8cc2f;
+	margin: 20px auto;
+}
+
+.hero__description {
+	font-size: 1.2rem;
+	color: #ffffff;
+}

@@ -1,0 +1,50 @@
+/* Loading Spiner */
+
+.loading {
+	text-align: center;
+}
+
+.loading__logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.loading__logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.loading__header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Loading Spinner Ended  */
+
+.navfixer {
+	margin-top: 55px;
+}
+
+a {
+	color: #6e3098;
+}
+
+a:hover {
+	color: #f8cc2f;
+}

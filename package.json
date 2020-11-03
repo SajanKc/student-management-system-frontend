@@ -20,8 +20,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
-  },
-  "proxy": "https://student-mgmt-system.herokuapp.com",
+	},
+	"proxy": "https://student-mgmt-system.herokuapp.com",
 	"eslintConfig": {
 		"extends": [
 			"react-app",
