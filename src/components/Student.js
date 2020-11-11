@@ -8,7 +8,7 @@ const Student = () => {
 
   const getStudent = async () => {
     const response = await fetch("/student");
-    const result = await response.json();
+	const result = await response.json();
     setStudents(result);
     setIsLoading(false);
     return result;
@@ -23,7 +23,7 @@ const Student = () => {
           "Content-Type": "application/json",
         },
       });
-	}
+    }
 	getStudent();
   };
 

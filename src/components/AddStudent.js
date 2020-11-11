@@ -25,7 +25,7 @@ const AddStudent = () => {
       phone: phone,
     };
 
-    await fetch("/addstudent", {
+    await fetch("/student", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -38,6 +38,15 @@ const AddStudent = () => {
       .catch((error) => {
         console.error("Error: ", error);
       });
+
+    setId("");
+    setRollNo("");
+    setFirstName("");
+    setLastName("");
+    setAddress("");
+    setGender("");
+    setEmail("");
+    setPhone("");
   };
 
   return (
@@ -51,6 +60,7 @@ const AddStudent = () => {
               className="form-control"
               type="text"
               value={id}
+              autoFocus
               onChange={(e) => {
                 setId(e.target.value);
               }}
@@ -129,7 +139,7 @@ const AddStudent = () => {
               type="text"
               value={phone}
               onChange={(e) => {
-                setPhone(e.target.value);
+                setPhone(e.target.value.substr(0, 10));
               }}
             />
           </div>
